@@ -1,0 +1,24 @@
+author: starsiv
+containers:
+  oofauth2:
+    build: ./chall
+    ports:
+    - 3000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 1000m
+        memory: 1000M
+description: "\nOur developer quit in the middle of a full rewrite of our authentication\
+  \ and authorization system. Nobody is able to login as admin, or access the developer's\
+  \ protected data.\n\n Can you help? Credentials: `developer:repolevedmai`\n\nSite:\
+  \ {{link}} "
+expose:
+  oofauth2:
+  - http: oofauth2
+    target: 3000
+flag:
+  file: flag.txt
+name: OofAuth2
+sortWeight: 619
+visible: true

@@ -1,0 +1,24 @@
+author: zledge
+containers:
+  forge:
+    build: ./challenge
+    ports:
+    - 1234
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: '
+
+  Site: {{link}}'
+expose:
+  forge:
+  - http: forge
+    target: 1234
+flag:
+  file: flag.txt
+name: forge your way in
+provide:
+- challenge/server.py
+sortWeight: 850

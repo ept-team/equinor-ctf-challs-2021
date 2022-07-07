@@ -1,0 +1,25 @@
+author: lars.kaare
+containers:
+  jwtctf:
+    build: ./chall
+    environment:
+      ZWAGGER_HOST: quote.io.ept.gg
+    ports:
+    - 3000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: ' Can I request a quote?
+
+
+  Site: {{link}}'
+expose:
+  jwtctf:
+  - http: quote
+    target: 3000
+flag:
+  file: flag.txt
+name: The Quote
+sortWeight: 660

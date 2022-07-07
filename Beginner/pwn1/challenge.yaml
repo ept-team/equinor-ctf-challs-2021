@@ -1,0 +1,28 @@
+author: nordbo
+containers:
+  pwn13:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: "Category: Pwn\n\nThe printf function in expects one or more parameters.\
+  \ In the man page its defined as:\n`int printf(const char *format, ...);`\n\nIf\
+  \ the first (and only) argument is a pointer string without any formating options\
+  \ it just prints the string. But what happens if we only have one argument, that\
+  \ is user controlled? \n\nThe [man](https://man7.org/linux/man-pages/man3/printf.3.html)\
+  \ page can be a good place to start.\n\n\n`nc {{host}} {{port}}`"
+expose:
+  pwn13:
+  - target: 1024
+    tcp: 30021
+flag:
+  file: chall/flag.txt
+name: I think we have a roof leak.
+provide:
+- handout/pwn1
+- handout/pwn1.c
+sortWeight: 1350

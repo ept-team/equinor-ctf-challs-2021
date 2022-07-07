@@ -1,0 +1,29 @@
+author: iLoop
+containers:
+  web1:
+    build: ./chall/
+    ports:
+    - 5000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'Category: Web
+
+
+  There may be some notes you need to see, or maybe not?
+
+
+  OWASP can help you if you need some hints, remember this is an old developer.
+
+
+  Site: {{link}}'
+expose:
+  web1:
+  - http: notes
+    target: 5000
+flag:
+  file: chall/flag.txt
+name: Notes
+sortWeight: 1740

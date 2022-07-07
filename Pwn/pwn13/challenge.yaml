@@ -1,0 +1,28 @@
+author: nordbo
+containers:
+  pwn13:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'I found this old encryption scheme that looks really secure and implemented
+  an online service for you to test it.
+
+
+  `nc {{host}} {{port}}`'
+expose:
+  pwn13:
+  - target: 1024
+    tcp: 30001
+flag:
+  file: chall/flag.txt
+name: pwn13
+provide:
+- chall/pwn13
+- chall/libc.so.6
+- chall/Dockerfile
+sortWeight: 240

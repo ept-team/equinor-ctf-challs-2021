@@ -1,0 +1,23 @@
+author: zledge
+containers:
+  web1:
+    build: ./chall
+    ports:
+    - 1234
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'This chall requires advanced browser manipulation skills
+
+
+  Site: {{link}}'
+expose:
+  web1:
+  - http: f12
+    target: 1234
+flag:
+  file: chall/flag.txt
+name: f12
+sortWeight: 650

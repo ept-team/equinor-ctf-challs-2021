@@ -1,0 +1,11 @@
+author: zledge
+description: 'Category: Crypto
+
+
+  Are we eXclusive, OR?'
+flag:
+  file: chall/flag.txt
+name: never-gonna-exclude-you
+provide:
+- chall/cipher.txt
+sortWeight: 1940

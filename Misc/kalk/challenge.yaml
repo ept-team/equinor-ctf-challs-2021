@@ -1,0 +1,29 @@
+author: 'null'
+containers:
+  kalk:
+    build: ./chall
+    ports:
+    - 3000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'I heard you needed a new calculator for your math course? Why buy a
+  new one when you can just use my Calculator-as-a-Service instead!
+
+
+
+
+  `nc {{host}} {{port}}`'
+expose:
+  kalk:
+  - target: 3000
+    tcp: 30046
+flag:
+  file: chall/flag.txt
+name: "\U0001F525 kalk \U0001F525"
+provide:
+- chall/kalk.py
+- chall/Dockerfile
+sortWeight: 700

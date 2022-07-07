@@ -1,0 +1,30 @@
+{
+	"name": "oofauth",
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+        "serve": "vite --host=0.0.0.0 preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"format": "prettier --ignore-path .prettierignore --write --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^1.0.0-next.26",
+		"@tsconfig/svelte": "^2.0.1",
+		"prettier": "^2.4.1",
+		"prettier-plugin-svelte": "^2.4.0",
+		"svelte": "^3.43.1",
+		"svelte-check": "^2.2.6",
+		"svelte-preprocess": "^4.9.8",
+		"tslib": "^2.3.1",
+		"typescript": "^4.4.3",
+		"vite": "^2.6.2"
+	},
+	"dependencies": {
+		"@kahi-ui/framework": "^0.4.1",
+		"jdenticon": "^3.1.1",
+		"ts-md5": "^1.2.9"
+	}
+}

@@ -1,0 +1,26 @@
+author: zledge
+containers:
+  encoding:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'Help us decode some very important words! You might be awarded a flag
+  in the end
+
+
+  `nc {{host}} {{port}}`'
+expose:
+  encoding:
+  - target: 1024
+    tcp: 30045
+flag:
+  file: chall/flag.txt
+name: "\U0001F525 Know your encoding \U0001F525"
+provide:
+- chall/encoder.py
+sortWeight: 780

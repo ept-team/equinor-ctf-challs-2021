@@ -1,0 +1,11 @@
+author: vcpo
+description: 'Take a zip of my uncrackable drink.
+
+
+  ![Description](images/description.png)'
+flag:
+  file: chall/flag.txt
+name: Uncrackable zip
+provide:
+- chall/challenge.zip
+sortWeight: 740

@@ -1,0 +1,9 @@
+author: zledge
+description: "Category: Crypto\n\nFlag6.txt seems to have been uploaded and encrypted\
+  \ on the adversaries\u2019 infrastructure. It must be very important! Luckily we\
+  \ where able to obtain the source code used for the offline encryption, but we are\
+  \ not sure how to decrypt flag6.txt.\n\nUse the files provided in Ransomfail1."
+flag:
+  file: ../ransomfail1/Flags/flag6.txt
+name: Ransomfail6
+sortWeight: 960

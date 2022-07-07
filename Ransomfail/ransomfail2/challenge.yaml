@@ -1,0 +1,15 @@
+author: zledge
+description: 'Category: Beginner/Forensics
+
+
+  You must solve the previous Ransomfail challenge in order to solve this challenge.
+
+
+  A flag is bundled with the downloaded payload within the pcap. Find it.
+
+
+  Use the files provided in Ransomfail1.'
+flag:
+  file: ../ransomfail1/Flags/flag2.txt
+name: Ransomfail2
+sortWeight: 968

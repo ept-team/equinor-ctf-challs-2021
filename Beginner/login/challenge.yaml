@@ -1,0 +1,26 @@
+author: iLoop
+containers:
+  web1:
+    build: ./chall/
+    ports:
+    - 5000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'Category: Web
+
+
+  This is the Stonks System, see if you can get admin access.
+
+
+  Site: {{link}}'
+expose:
+  web1:
+  - http: stonks
+    target: 5000
+flag:
+  file: chall/flag.txt
+name: stonks
+sortWeight: 1750

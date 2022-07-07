@@ -1,0 +1,43 @@
+author: nordbo
+containers:
+  pwn13:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'Category: Pwn
+
+
+  You might have heard of buffer overflows, but do you know how to exploit them?
+
+
+  The goal of this challenge is to overwrite `main`''s return pointer which is stored
+  on the stack, with the address of the win() function. There are several good (and
+  bad) tutorials on how to do this online. Googeling for example `ret2win` or `binary
+  exploitation buffer overflow` might be a good place to start.
+
+
+  My personal favorite is the [Binary Exploitation / Memory Corruption](https://youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN)
+  playlist by [LiveOverflow](https://twitter.com/LiveOverflow). [Buffer Overflows
+  can Redirect Program Execution - bin 0x0D](https://youtu.be/8QzOC8HfOqU) goes in
+  to detail on how to redirect redirect program execution, but it might be a good
+  idea to watch the playlist from the start if you dont have previous knowledge on
+  the  topic.
+
+
+  `nc {{host}} {{port}}`'
+expose:
+  pwn13:
+  - target: 1024
+    tcp: 30022
+flag:
+  file: chall/flag.txt
+name: Please call 1-500-WIN to get the flag!
+provide:
+- chall/pwn2
+- chall/pwn2.c
+sortWeight: 1340

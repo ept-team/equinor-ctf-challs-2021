@@ -1,0 +1,44 @@
+author: iLoop
+containers:
+  apache:
+    build: chall/apache/.
+    links:
+    - notes
+    - dev
+    ports:
+    - 80
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+  dev:
+    build: chall/devapp/.
+    ports:
+    - 5000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+  notes:
+    build: chall/notes/.
+    ports:
+    - 5000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'Can you find your way out?
+
+
+  Site: [Maze](http://{{host}}:{{port}})'
+expose:
+  apache:
+  - target: 80
+    tcp: 30073
+flag:
+  file: chall/notes/flag.txt
+name: maze
+sortWeight: 1140

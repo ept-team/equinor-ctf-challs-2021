@@ -1,0 +1,26 @@
+author: nordbo
+containers:
+  sc02:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: "### Part two \n\nWelcome to part two! We have introduced a bad bytes\
+  \ list. Can you still pop a shell or read the flag without any of the bad bytes?\
+  \ Look in the sc02.c for details :)\n\n\n`nc {{host}} {{port}}`"
+expose:
+  sc02:
+  - target: 1024
+    tcp: 30012
+flag:
+  file: chall/flag.txt
+name: shellcoding 0x02
+provide:
+- chall/sc02
+- chall/sc02.c
+- chall/example.py
+sortWeight: 340

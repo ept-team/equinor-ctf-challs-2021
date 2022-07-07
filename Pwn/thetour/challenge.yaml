@@ -1,0 +1,27 @@
+author: nordbo
+containers:
+  pwn13:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'Can you find your way around an elf?
+
+
+  `nc {{host}} {{port}}`'
+expose:
+  pwn13:
+  - target: 1024
+    tcp: 30003
+flag:
+  file: chall/flag.txt
+name: The guided tour
+provide:
+- chall/tour
+- chall/libc.so.6
+- chall/Dockerfile
+sortWeight: 230

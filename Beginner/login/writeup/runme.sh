@@ -1,0 +1,1 @@
+curl -v --cookie "Role=Admin" http://login.io.ept.gg:5000/mainpage

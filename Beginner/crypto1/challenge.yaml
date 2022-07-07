@@ -1,0 +1,11 @@
+author: viipz
+description: 'Category: Crypto
+
+
+  ![Description](images/Vigenere.png)'
+flag:
+  file: chall/flag.txt
+name: Cipher salad with vinaigrette is so tasty
+provide:
+- chall/cipher.txt
+sortWeight: 1950

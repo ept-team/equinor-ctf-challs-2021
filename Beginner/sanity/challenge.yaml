@@ -1,0 +1,24 @@
+author: nordbo
+containers:
+  crypto1:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'Welcome to Equinor CTF! :)
+
+
+
+  `nc {{host}} {{port}}`'
+expose:
+  crypto1:
+  - target: 1024
+    tcp: 30020
+flag:
+  file: chall/flag.txt
+name: Sanity
+sortWeight: 2000

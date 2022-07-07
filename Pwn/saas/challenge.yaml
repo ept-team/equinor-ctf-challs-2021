@@ -1,0 +1,24 @@
+author: nordbo
+containers:
+  pwnshit:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: "All premium users gets a free flag!\n\nHint: If you can't crack it with\
+  \ rockyou, it's not supposed to be cracked. \n\n`nc {{host}} {{port}}`"
+expose:
+  pwnshit:
+  - target: 1024
+    tcp: 30004
+flag:
+  file: chall/flag.txt
+name: SaaS
+provide:
+- chall/saas
+- chall/Dockerfile
+sortWeight: 210

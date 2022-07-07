@@ -1,0 +1,17 @@
+author: W00TZ0N
+description: 
+  
+
+  'Can you fingerprint the Network Engine that produced the communication
+  shown in this packet capture? Provide the model name, firmware revision and the Windows Embedded CE version. Separate all items with a comma. The flag is case sensitive.
+
+  
+  Submit flag in form EPT{something,#.#.#.#,#.#}. 
+  
+  
+  [bacnet.pcap](https://drive.google.com/file/d/1RK2d7vbS5ZXAWTSfcBAPv48F2kpssd6_/view?usp=sharing)'
+  
+flag:
+  file: chall/flag.txt
+name: bacnetfingerprint
+sortWeight: 1040

@@ -1,0 +1,17 @@
+author: W00TZ0N
+description: 
+  
+
+  'Find the description of the type of controller present at the slave ID.
+  It will point you to a company, what is their VAT number? The flag is case sensitive.
+  
+
+  Remove all spaces from the VAT number when you submit the flag. Submit flag in form EPT{XX#########}. 
+  
+  
+  [modbus.pcap](https://drive.google.com/file/d/1V_Z9K_wICv3ku4JPAy_aoDmIirXbio7t/view?usp=sharing)'
+flag:
+  file: chall/flag.txt
+name: modbusslave
+sortWeight: 1010
+visible: false

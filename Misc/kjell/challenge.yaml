@@ -1,0 +1,26 @@
+author: 'null'
+containers:
+  kalk:
+    build: ./chall
+    ports:
+    - 3000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'Do you find yourself looking for a python shell to test your code from
+  time to time? Fear not! Apparently this new service will just execute anything you
+  give it...
+
+
+
+  `nc {{host}} {{port}}`'
+expose:
+  kalk:
+  - target: 3000
+    tcp: 30043
+flag:
+  file: chall/flag.txt
+name: kjell
+sortWeight: 710

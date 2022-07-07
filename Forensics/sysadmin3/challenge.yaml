@@ -1,0 +1,34 @@
+author: LOLASL
+containers:
+  web2:
+    build: .
+    ports:
+    - 5000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'Our sysadmin came back, created a new web portal and ran off mumbling
+  something about job security.
+
+  We need to access his web site, but unfortunately only got a copy of the AppData
+  folder this time.
+
+  Can you please help us out?
+
+
+  [AppData.zip](https://eptctf.s3.eu-west-1.amazonaws.com/AppData.zip)
+
+
+  (This challenge can be solved without solving sysadmin1 and sysadmin2 and the files
+  are different from the previous challenges so make sure you download the above file
+  for this one.)'
+expose:
+  web2:
+  - http: nextgensysadminportal
+    target: 5000
+flag:
+  file: flag.txt
+name: sysadmin3
+sortWeight: 530

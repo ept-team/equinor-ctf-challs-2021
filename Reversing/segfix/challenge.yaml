@@ -1,0 +1,11 @@
+author: vcpo
+description: '
+
+  Could you please find an input that fixes my segmentation fault? I think I had a
+  way to verify the flag when the binary was still working'
+flag:
+  file: chall/flag.txt
+name: segFix
+provide:
+- chall/segFix
+sortWeight: 440

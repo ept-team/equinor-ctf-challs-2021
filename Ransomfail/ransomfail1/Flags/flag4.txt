@@ -1,0 +1,1 @@
+EPT{known-plaintext-should-be-fine}

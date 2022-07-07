@@ -1,0 +1,14 @@
+author: LOLASL
+description: 'Our sysadmin has disappeared and we can no longer access our sysadmin
+  web portal.
+
+
+  Now that you have unlocked the drive, please see if you can retrieve the SysAdmin
+  Web Portal password.
+
+
+  Use the same files as sysadmin1'
+flag:
+  file: chall/flag.txt
+name: sysadmin2
+sortWeight: 540

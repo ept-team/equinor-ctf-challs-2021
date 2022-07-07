@@ -1,0 +1,37 @@
+author: nordbo
+containers:
+  sc01:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: "\n### Welcome to the shellcoding challenges.  \nThe idea of these challenges\
+  \ is to write x86-64 shellcode to obtain the flag which is located in `/opt/flag`.\
+  \ \nAs you progress, the challenges gets harder. \nThe source code and an example\
+  \ pwntools template to communicate with the server is provided. \npwn.college has\
+  \ a great introduction to [assembly](https://www.youtube.com/watch?v=ImdnOGNZflU)\
+  \ and [shellcoding](https://www.youtube.com/watch?v=715v_-YnpT8)\nGood luck!  \n\
+  \n\n**Environment setup**\n\n\nTo run the binaries and example python script, you\
+  \ need a Linux environment. \nIf you are using windows, you can use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10).\
+  \  Before you get started you need to install python3, pip3, pwntools and gdb. \n\
+  I would also recommend a gdb plugin like pwndbg or gef.  \n\n\n**Example installation\
+  \ for Ubuntu:**\n\n```bash\nsudo apt update\nsudo apt install -y python3 python3-pip\
+  \ python3-dev git libssl-dev libffi-dev build-essential gdb gdbserver\npython3 -m\
+  \ pip install --upgrade pip\ngit clone https://github.com/pwndbg/pwndbg\ncd pwndbg\n\
+  ./setup.sh\npython3 -m pip install --upgrade pwntools\n```\n\n`nc {{host}} {{port}}`\n"
+expose:
+  sc01:
+  - target: 1024
+    tcp: 30011
+flag:
+  file: chall/flag.txt
+name: shellcoding 0x01
+provide:
+- chall/sc01
+- chall/sc01.c
+- chall/example.py
+sortWeight: 350

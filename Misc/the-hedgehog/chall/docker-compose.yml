@@ -1,0 +1,7 @@
+# 'docker-compose up --build' for testing
+version: '3'
+services:
+  brute:
+    build: .
+    ports:
+      - '3000:3000'

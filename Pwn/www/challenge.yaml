@@ -1,0 +1,31 @@
+author: nordbo
+containers:
+  pwn1:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: '
+
+  Write whatever you want, whereever you want.
+
+
+  `nc {{host}} {{port}}`
+
+  '
+expose:
+  pwn1:
+  - target: 1024
+    tcp: 30002
+flag:
+  file: chall/flag.txt
+name: www
+provide:
+- chall/www
+- chall/libc.so.6
+- chall/Dockerfile
+sortWeight: 220

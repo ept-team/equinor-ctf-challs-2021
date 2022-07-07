@@ -1,0 +1,23 @@
+author: nordbo
+containers:
+  password:
+    build: ./chall
+    ports:
+    - 5000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: "Im tired of all these horrible passwords, so I made this password validator\
+  \ to make sure your passwords are secure. \n\n\nSite: {{link}}"
+expose:
+  password:
+  - http: password
+    target: 5000
+flag:
+  file: chall/flag.txt
+name: The Password Validator
+provide:
+- chall/app.py
+sortWeight: 630

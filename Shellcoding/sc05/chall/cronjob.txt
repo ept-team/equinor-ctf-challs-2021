@@ -1,0 +1,3 @@
+* * * * * /usr/bin/python3 /opt/generateFiles.py >> /var/log/cron.log 2>&1
+* * * * * su  ctf -c "/usr/bin/flock -n /tmp/sc05.lockfile /home/ctf/ynetd /home/ctf/sc05"
+# An empty line is required at the end of this file for a valid cron file.

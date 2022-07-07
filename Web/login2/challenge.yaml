@@ -1,0 +1,28 @@
+author: iLoop
+containers:
+  web1:
+    build: ./chall/
+    ports:
+    - 5000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'This is the new and improved Sales System
+
+
+  We have changed to use a more secure login now so there is no easy way to change
+  your role
+
+
+
+  Site: {{link}}'
+expose:
+  web1:
+  - http: sales
+    target: 5000
+flag:
+  file: chall/flag.txt
+name: sales
+sortWeight: 640

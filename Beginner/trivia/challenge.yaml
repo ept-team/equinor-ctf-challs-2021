@@ -1,0 +1,28 @@
+author: viipz
+containers:
+  trivia:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'Category: Misc
+
+
+  Can you provide the correct answer fast enough?
+
+
+  `nc {{host}} {{port}}`'
+expose:
+  trivia:
+  - target: 1024
+    tcp: 30023
+flag:
+  file: chall/flag.txt
+name: Trivial Pursuit on steroids
+provide:
+- chall/example.py
+sortWeight: 1840

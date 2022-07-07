@@ -1,0 +1,52 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Search {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="py-4">
+        {% if message %}
+    <div class="col-12 mb-4">
+        <div class="card bg-danger border-0 shadow">
+            <div class="card-header d-sm-flex flex-row align-items-center flex-0">
+                <div class="d-block mb-3 mb-sm-0">
+                    {{ message }}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %} 
+    This is new functionallity and may not work perfect at the moment.
+    </div>
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card bg-yellow-100 border-0 shadow">
+                <div class="card-header d-sm-flex flex-row align-items-center flex-0">
+                    <div class="col-12 mb-2">
+                        {% from "_formhelpers.html" import render_field %}
+                            <form method=post>
+                            <dl>
+                                {{ render_field(form.search) }}
+                              
+                                
+                                
+                            </dl>
+                            
+                                <p><input type=submit value=Search>
+                                </form>
+                                                         
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

@@ -1,0 +1,11 @@
+author: nordbo
+description: "We all need some windows in our lives. \n\nPS: you need to download\
+  \ [Microsoft Visual C++ Redistributable x86 for Visual Studio 2015-2019](https://aka.ms/vs/16/release/vc_redist.x86.exe)\
+  \ to run this locally.\n\nRemote is Windows Server 2022, `Microsoft Windows [Version\
+  \ 10.0.20348.288]`, but is also tested on Windows 10.\n\n`nc ropme.io.ept.gg 8888`\n"
+flag:
+  file: flag.txt
+name: "\U0001F525 ropme \U0001F525"
+provide:
+- ropme.exe
+sortWeight: 209

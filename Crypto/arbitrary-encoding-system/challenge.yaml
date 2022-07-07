@@ -1,0 +1,10 @@
+author: 'null'
+description: I heard that all the cool kids down the street had switched to this new
+  cipher. Think it was called Arbitrary Encoding System or something...
+flag:
+  file: ./flag.txt
+name: Arbitrary Encoding System
+provide:
+- ./aes.py
+- ./flag.png.enc
+sortWeight: 855

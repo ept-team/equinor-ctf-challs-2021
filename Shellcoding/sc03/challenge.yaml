@@ -1,0 +1,32 @@
+author: nordbo
+containers:
+  sc03:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: '### Part three
+
+  Can you pop a shell in 6 bytes?
+
+
+  Tip: create a pwntools template using `pwn template --host io.ept.gg --port 30013
+  --quiet ./sc03 > solve.py`
+
+
+  `nc {{host}} {{port}}`'
+expose:
+  sc03:
+  - target: 1024
+    tcp: 30013
+flag:
+  file: chall/flag.txt
+name: shellcoding 0x03
+provide:
+- chall/sc03
+- chall/sc03.c
+sortWeight: 330

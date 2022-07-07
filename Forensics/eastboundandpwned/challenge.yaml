@@ -1,0 +1,16 @@
+author: LOLASL
+description: 'KennyP thinks that Anti-Virus is for wussies and that his enemies can''t
+  touch him, but we are now observing hits on a signature that could indicate the
+  presence of Cobalt Strike on his computer.
+
+
+  We have retrieved the network traffic in question and a memory dump of the machine
+  (Windows 10 x64 Build 19043.1237), can you figure out what the attacker
+  has been up to?
+
+
+  [EastboundAndPwned.zip](https://eptctf.s3.eu-west-1.amazonaws.com/EastboundAndPwned.zip)'
+flag:
+  file: chall/flag.txt
+name: "\U0001F525 Eastbound & Pwned \U0001F525"
+sortWeight: 520

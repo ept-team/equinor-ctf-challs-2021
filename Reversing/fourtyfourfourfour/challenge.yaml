@@ -1,0 +1,30 @@
+author: LOLASL/nordbo
+containers:
+  www:
+    build: ./chall
+    ports:
+    - 80
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'Category: Reversing/Forensics
+
+
+  I always thought .docx files were safe to open, but seems like I was wrong.
+
+
+  *Disclaimer: Password for infected.zip is "infected". The document can possibly
+  be detected/removed by AV and might modify system settings when executed so we recommend
+  running this in a sandbox environment preferably with internet access.*'
+expose:
+  www:
+  - http: evil
+    target: 80
+flag:
+  file: chall/flag.txt
+name: fourtyfourfourfour
+provide:
+- chall/infected.zip
+sortWeight: 430

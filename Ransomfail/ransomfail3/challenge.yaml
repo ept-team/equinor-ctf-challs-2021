@@ -1,0 +1,15 @@
+author: zledge
+description: 'Category: Beginner/Reversing
+
+
+  You must solve the previous Ransomfail challenge in order to solve this challenge.
+
+
+  A flag is hidden within the malware. Find it.
+
+
+  Use the files provided in Ransomfail1.'
+flag:
+  file: ../ransomfail1/Flags/flag3.txt
+name: Ransomfail3
+sortWeight: 966

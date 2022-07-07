@@ -1,0 +1,21 @@
+author: iLoop
+containers:
+  web1:
+    build: ./chall
+    ports:
+    - 5000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: "Some like this on their burger.... \n\nPeople are strange, just ask\
+  \ Pondus\n\n\nSite: {{link}}"
+expose:
+  web1:
+  - http: greensalt
+    target: 5000
+flag:
+  file: chall/flag.txt
+name: GreenSalty
+sortWeight: 650

@@ -1,0 +1,12 @@
+author: zledge
+description: 'Category: Crypto
+
+
+  Decrypt flag5.txt.
+
+
+  Use the files provided in Ransomfail1.'
+flag:
+  file: ../ransomfail1/Flags/flag5.txt
+name: Ransomfail5
+sortWeight: 962

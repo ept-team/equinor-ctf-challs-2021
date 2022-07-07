@@ -1,0 +1,14 @@
+author: W00TZ0N
+description: 
+  
+  'Identify the IP addresses of the devices that are being written to through Modbus. 
+  
+  Order the IP''s in increasing order and separate them by commas. Don''t 
+  use spaces within your flag. Submit flag in form EPT{#.#.#.#,#.#.#.#,#.#.#.#}.
+
+
+  [modbus.pcap](https://drive.google.com/file/d/1V_Z9K_wICv3ku4JPAy_aoDmIirXbio7t/view?usp=sharing)'
+flag:
+  file: chall/flag.txt
+name: modbuswrite
+sortWeight: 1020

@@ -1,0 +1,26 @@
+author: sweeet
+containers:
+  classification:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: " Predict the correct classes and be rewarded.\n\nAchieve 85% or above\
+  \ to recieve the flag.\n\nYou can use the code to get the data from the .npy file.\
+  \ \n\n Provide the classification in the same order you predict it \n\n Example:\
+  \ `12010121010110...102220010101010`\n\nGood luck! \n\n`nc {{host}} {{port}}`"
+expose:
+  classification:
+  - target: 1024
+    tcp: 30044
+flag:
+  file: chall/flag.txt
+name: classification
+provide:
+- chall/data.npy
+- chall/example_code.py
+sortWeight: 720

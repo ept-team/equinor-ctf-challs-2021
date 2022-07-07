@@ -1,0 +1,14 @@
+author: rvino
+description: 'Category: Misc
+
+
+
+  Composite numbers are no-go, ''cause it''s prime time!
+
+  '
+flag:
+  file: chall/flag.txt
+name: Numbers and letters
+provide:
+- chall/numbers_and_letters.txt
+sortWeight: 1850

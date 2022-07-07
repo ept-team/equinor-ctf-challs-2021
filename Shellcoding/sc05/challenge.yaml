@@ -1,0 +1,30 @@
+author: nordbo
+containers:
+  sc05:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: "### Part five \n\nThis one is a bit different from the others.\nThe\
+  \ flag is in one of 200 files that are randomly created in `/opt/flag/`. You need\
+  \ to find and print the flag. The files are recreated every minute using the script\
+  \ `generateFiles.py` which is attached. \n\nI've also disabled execv and fork syscalls\
+  \ using seccomp. GL HF! :)\n\nYou need to install `libseccomp-dev` to compile, and\
+  \ then run gcc with the lseccomp flag; `gcc -o sc05 sc05.c -lseccomp`\n\n`nc {{host}}\
+  \ {{port}}`"
+expose:
+  sc05:
+  - target: 1024
+    tcp: 30015
+flag:
+  file: chall/flag.txt
+name: "\U0001F525 shellcoding 0x05 \U0001F525"
+provide:
+- chall/sc05
+- chall/sc05.c
+- chall/generateFiles.py
+sortWeight: 310

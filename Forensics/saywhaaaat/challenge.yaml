@@ -1,0 +1,19 @@
+author: LOLASL
+description: 'Category: Forensics/Reversing
+
+
+  An advanced persistent threat actor going by the name APT666 managed to set up a
+  backdoor on one of our machines. We don''t understand exactly what happened, but
+  we have retrieved a suspicious file and the network traffic from the time around
+  the event. Please have a look!
+
+
+  *Disclaimer: The malicious file will not harm your system as the "C2" server has
+  been taken down, but always handle malware samples with care!*
+
+
+  [saywhaaaat.zip](https://eptctf.s3.eu-west-1.amazonaws.com/saywhaaaat.zip)'
+flag:
+  file: chall/flag.txt
+name: say whaaaat?
+sortWeight: 510

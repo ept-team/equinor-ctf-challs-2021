@@ -1,0 +1,29 @@
+author: LOLASL
+containers:
+  ah64:
+    build: ./chall
+    ports:
+    - 8801
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'Category: Web
+
+
+  Super Six One, go to UHF secure. I''ve got some bad news. We see vulnerabilites
+  like it is 2001. Tango located in `/opt/flag`
+
+
+  Site: [AH-64](http://{{host}}:{{port}})
+
+  '
+expose:
+  ah64:
+  - target: 8801
+    tcp: 30071
+flag:
+  file: chall/flag.txt
+name: AH-64
+sortWeight: 1730

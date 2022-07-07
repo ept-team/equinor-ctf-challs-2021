@@ -1,0 +1,33 @@
+author: nordbo
+containers:
+  sc04:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: '### Part four
+
+
+  There is a flag somewhere in memory, find it.
+
+
+  You need to install `libseccomp-dev` to compile, and then run gcc with the lseccomp
+  flag; `gcc -o sc04  sc04.c  -lseccomp  -masm=intel`
+
+
+  `nc {{host}} {{port}}`'
+expose:
+  sc04:
+  - target: 1024
+    tcp: 30014
+flag:
+  file: chall/flag.txt
+name: shellcoding 0x04
+provide:
+- chall/sc04
+- chall/sc04.c
+sortWeight: 320

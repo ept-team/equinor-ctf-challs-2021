@@ -1,0 +1,10 @@
+author: 'null'
+description: Using all the latest math and crypto libraries, this new Really Solid
+  Algebra system should be practically uncrackable!
+flag:
+  file: ./flag.txt
+name: Really Solid Algebra
+provide:
+- ./output.log
+- ./rsa.py
+sortWeight: 860

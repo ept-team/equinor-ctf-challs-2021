@@ -1,0 +1,6 @@
+flask
+waitress
+pycryptodome
+flask_sqlalchemy
+sqlalchemy
+flask_login

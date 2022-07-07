@@ -1,0 +1,55 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} notes {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="py-4">
+        {% if message %}
+    <div class="col-12 mb-4">
+        <div class="card bg-danger border-0 shadow">
+            <div class="card-header d-sm-flex flex-row align-items-center flex-0">
+                <div class="d-block mb-3 mb-sm-0">
+                    {{ message }}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %} 
+    </div>
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card bg-yellow-100 border-0 shadow">
+                <div class="card-header d-sm-flex flex-row align-items-center flex-0">
+                    <div class="col-12 mb-2">
+                        {% from "_formhelpers.html" import render_field %}
+                            <form method=post>
+                            <dl>
+                                {{ render_field(form.title) }}
+                                {{ render_field(form.note) }}
+                                
+                                
+                            </dl>
+                            {% if not read_only %}
+                                <p><input type=submit value=Save>
+                                </form>
+                            {% else %} 
+                            </form>                              
+                            <div class="d-flex ms-auto">
+                                <a href="/notes" class="btn btn-secondary text-dark btn-sm me-2">back</a>
+                        
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

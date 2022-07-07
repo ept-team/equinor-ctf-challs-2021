@@ -1,0 +1,15 @@
+author: W00TZ0N
+description: 
+  
+
+  'Identify the ServerSessionUser in the communication captured. The flag
+  is case sensitive. Submit flag in form EPT{something}. 
+  
+  
+  [S7-1511.pcap](https://drive.google.com/file/d/1ZbTj_rss33uBdMjeDdALMhbzzpITqTfm/view?usp=sharing)'
+  
+flag:
+  file: chall/flag.txt
+name: s7serversessionuser
+sortWeight: 1000
+visible: false

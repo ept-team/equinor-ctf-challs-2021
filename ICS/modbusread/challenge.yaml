@@ -1,0 +1,15 @@
+author: W00TZ0N
+description: 
+  
+  'Identify the Exception Code for the packet with a Modbus Read Discrete
+  Inputs function code. Provide the Exception Code as text - including spaces, and
+  the frame number. Separate both items with a comma. Submit flag in form EPT{something
+  goes here,#}
+
+
+  [modbus.pcap](https://drive.google.com/file/d/1V_Z9K_wICv3ku4JPAy_aoDmIirXbio7t/view?usp=sharing)'
+  
+flag:
+  file: chall/flag.txt
+name: modbusread
+sortWeight: 1030

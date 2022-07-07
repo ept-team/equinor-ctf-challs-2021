@@ -1,0 +1,16 @@
+author: LOLASL
+description: 'Our sysadmin has disappeared and we can no longer access our sysadmin
+  web portal.
+
+
+  We managed to get an image of his harddrive, but we don''t know which bitlocker
+  password corresponds to his drive.
+
+  Can you help us unlock it?
+
+
+  [sysadmin.zip](https://eptctf.s3.eu-west-1.amazonaws.com/sysadmin.zip)'
+flag:
+  file: chall/flag.txt
+name: sysadmin1
+sortWeight: 550

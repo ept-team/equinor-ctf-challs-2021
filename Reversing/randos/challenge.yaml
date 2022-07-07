@@ -1,0 +1,26 @@
+author: nordbo
+containers:
+  pwn13:
+    build: ./chall
+    ports:
+    - 1024
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'I''ve created this great service to help you get motivated. There is
+  even a free sample! :)
+
+
+  `nc {{host}} {{port}}`'
+expose:
+  pwn13:
+  - target: 1024
+    tcp: 30050
+flag:
+  file: chall/flag.txt
+name: Random motivational quotes
+provide:
+- chall/randos
+sortWeight: 450

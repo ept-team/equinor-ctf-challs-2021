@@ -1,0 +1,11 @@
+author: EPT
+description: '
+
+  All announcements will be on Discord. Please join to stay up to date, and get a free flag! :)
+  
+  [Equinor CTF Discord](https://discord.gg/k8kHAZV2Xq)
+  '
+flag:
+  file: flag.txt
+name: Discord
+sortWeight: 2200

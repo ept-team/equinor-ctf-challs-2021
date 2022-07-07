@@ -1,0 +1,24 @@
+author: starsiv
+containers:
+  oofauth:
+    build: ./chall
+    ports:
+    - 5000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: ' Hey I got a brilliant idea! Why not let `Identicons` do our logins?
+
+
+
+  Site: {{link}}'
+expose:
+  oofauth:
+  - http: oofauth
+    target: 5000
+flag:
+  file: flag.txt
+name: OofAuth
+sortWeight: 620

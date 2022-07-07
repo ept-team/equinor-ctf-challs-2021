@@ -1,0 +1,11 @@
+author: vcpo
+description: 'Category: Reversing
+
+
+  Just ask nicely for the flag.'
+flag:
+  file: chall/flag.txt
+name: baby1
+provide:
+- chall/baby1
+sortWeight: 1550

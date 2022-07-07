@@ -1,0 +1,11 @@
+author: nordbo
+description: 'Category: Reversing
+
+
+  Magical strings are great.'
+flag:
+  file: chall/flag.txt
+name: baby0
+provide:
+- chall/baby0
+sortWeight: 1560

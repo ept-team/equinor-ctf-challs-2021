@@ -1,0 +1,23 @@
+author: zledge
+containers:
+  rkcilf:
+    build: ./challenge
+    ports:
+    - 1234
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: "We created this web app, but we forgot the admin password. A secret\
+  \ flag should be readable from the /admin endpoint. \n\nSite: {{link}}"
+expose:
+  rkcilf:
+  - http: rkcilf
+    target: 1234
+flag:
+  file: challenge/flag.txt
+name: "\U0001F525 Sessions are key! \U0001F525"
+provide:
+- challenge/server.py
+sortWeight: 840

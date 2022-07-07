@@ -1,0 +1,27 @@
+author: vcpo
+description: '
+
+  <img src=images/yodawg.jpeg />
+
+
+  *Disclaimer:
+
+
+  This challenge is designed to be annoying and time consuming to reverse - do not attempt if you value your free time and sanity.
+
+
+  (Yes, you have been warned - the random infinite looping on some wrong inputs is also intended)
+
+
+  (No - the binary does not perform any malicious actions, but some techniques used can trigger some AV solutions)
+  
+
+  PS: you need to download [Microsoft Visual C++ Redistributable x64 for Visual Studio 2015-2019](https://aka.ms/vs/16/release/vc_redist.x64.exe)
+  *'
+
+flag:
+  file: chall/flag.txt
+name: 🔥 cmd 🔥
+provide:
+- chall/cmd.exe
+sortWeight: 420

@@ -1,0 +1,24 @@
+author: 'null'
+containers:
+  hedgehog:
+    build: ./chall
+    ports:
+    - 3000
+    replicas: 1
+    resources:
+      limits:
+        cpu: 100m
+        memory: 100M
+description: 'If all hashes are supposed to be unique, can''t you just reverse them?
+
+  `nc {{host}} {{port}}`'
+expose:
+  hedgehog:
+  - target: 3000
+    tcp: 30047
+flag:
+  file: chall/files/flag
+name: The Hedgehog
+provide:
+- chall/hedgehog.py
+sortWeight: 715

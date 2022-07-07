@@ -1,0 +1,15 @@
+Flask
+Werkzeug
+pyjwt
+requests
+waitress
+cryptography
+flask_login
+flask_migrate
+flask_wtf
+flask_sqlalchemy
+sqlalchemy
+email_validator
+python-decouple
+gunicorn
+jinja2

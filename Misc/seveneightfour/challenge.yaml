@@ -1,0 +1,11 @@
+author: sweeet
+description: "Trust your predictions, not your eyes\n\nI've recieved some weird looking\
+  \ images, I think they are \n trying to tell me something. Can you figure out what\
+  \ it is?\n Perhaps some machine learning could be of assistance.\n Flag format EPT{output}"
+flag:
+  file: chall/flag.txt
+name: seveneightfour
+provide:
+- chall/seveneightfour.zip
+- chall/example_code.py
+sortWeight: 730

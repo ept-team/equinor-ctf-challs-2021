@@ -1,0 +1,11 @@
+author: nordbo
+description: 'Category: Reversing
+
+
+  Can you figure it out?'
+flag:
+  file: chall/flag.txt
+name: baby2
+provide:
+- chall/baby2
+sortWeight: 1540

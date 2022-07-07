@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    image: greensalty:ctf-0.1
+    build: .
+    ports:
+    - "5000:5000/tcp"
+    networks:
+      - no-internet
+  
+
+networks:
+  internet: {}
+  no-internet:
+    internal: true

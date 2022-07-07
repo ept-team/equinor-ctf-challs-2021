@@ -1,0 +1,21 @@
+apiVersion: radix.equinor.com/v1
+kind: RadixApplication
+metadata:
+  name: ctfchallenge
+spec:
+  environments:
+    - name: development
+      build:
+        from: main
+  components:
+    - name: webapp
+      variables:
+        PORT: "3000"
+        NODE_ENV: "development"
+      secrets:
+        - ZWAGGER_HOST
+      src: .
+      ports:
+        - name: http
+          port: 3000
+      publicPort: http
